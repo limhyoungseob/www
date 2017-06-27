@@ -1,0 +1,25 @@
+@charset "utf-8";
+/*body{
+  background: yellow;
+
+}*/
+/*요소의 여백 최소화*/
+/* * 전체 선택자 */
+/** {
+  margin: 0;
+  padding: 0;
+}*/
+
+
+html, body, h1,h2,h3,h4,h5,h6,p{
+  margin: 0;
+  padding: 0;
+}
+
+/*제목크기 초기화*/
+h1,h2,h3,h4,h5,h6,p{
+  font-size: 1em;
+  /*fw:n*/
+  font-weight: normal;
+  
+}
