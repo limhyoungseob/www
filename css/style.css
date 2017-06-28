@@ -113,7 +113,7 @@ body {
     /*위에 3개를 한번에 나타내기*/
     background: url(images/bg_flower.png) no-repeat 50% 0%, linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(255, 255, 255, 1) 100%) repeat 0% 0%;
     /*이미지가 올라가는거를 막아준다. 배경 이미지를 고정시킨다.*/
-    /*background-attachment: fixed;*/
+    background-attachment: fixed;
     height: 100vh;
 }
 
@@ -239,6 +239,7 @@ a {
 
 .main-menu>li {
     float: left;
+    position: relative;
     /*이렇게 하면 단점은 여백을 주면 공백부분은 클릭할 수 없다. 따라서 밑에 li>a 부분에 준다.
     padding: 10px 20px;*/
 }
@@ -294,15 +295,34 @@ a {
     background: skyblue;
 }*/
 
+
+/*#para 아이디를 써버리면 구체성 점수가 100점이 된다.*/
+
 .main-menu ul {
     list-style: none;
-    background: lime;
+    /*background: lime;*/
     position: absolute;
     /*display: none;*/
+    /*rap은 줄바꿈이고 nowrap은 줄바꿈 하지 않겟다.*/
+    white-space: nowrap;
+    top: 47px;
+}
+
+.main-menu ul li {
+    display: inline-block;
 }
 
 .about-html {
+    /*!important를 쓰면 구체성이 1등이 된다. 무조건 보인다.*/
+    /*display: flex !important;*/
     display: block;
+    top: 0;
+    left: 0;
+}
+
+.about-html>li>a::before {
+    content: "*";
+    padding-left: 10px;
 }
 
 .about-CSS {
