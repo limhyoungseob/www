@@ -169,7 +169,7 @@ a {
     /*fixed는 absolute와 같은 화변 view port 기준이다.*/
     /*position: fixed;*/
     position: absolute;
-    top: 45px;
+    top: 50px;
     left: 60px;
 }
 
@@ -219,6 +219,49 @@ a {
 .info-menu li:last-child::after {
     /*background: yellow;*/
     content: "";
+}
+
+
+/*메인메뉴*/
+
+.main-menu {
+    background-image: linear-gradient(120deg, #96e6a1 0%, #d4fc79 100%);
+    /*background: linear-gradient(to bottom, #e5892d 0%, #e0652c 35%, #e0652c 65%, #e5892d 100%);*/
+    list-style: none;
+    border-top: 2px solid #181818;
+    /*x,y 값을 둥글게 할수 있다.*/
+    /*border-radius: 0 0 25px 25px/ 0 0 25px 25px;*/
+    border-radius: 0 0 25px 25px;
+    padding-left: 225px;
+    /*font-size: 1.8rem;*/
+    height: 45px;
+}
+
+.main-menu>li {
+    float: left;
+    /*이렇게 하면 단점은 여백을 주면 공백부분은 클릭할 수 없다. 따라서 밑에 li>a 부분에 준다.
+    padding: 10px 20px;*/
+}
+
+
+/*자식 선택자 그 안에 있는 자식만 A만을 선택한다.*/
+
+.main-menu>li>a {
+    font-size: 1.6rem;
+    font-family: "Noto Sans Bold";
+    /*요새는 투명도 주는게 트랜드 그때는 16진수가아닌 rgba 방식을 사용*/
+    color: rgba(93, 93, 93, 0.95);
+    padding: 10px 21px 10px 20px;
+    /*background: rgba(255, 255, 255, 0.6);*/
+    display: block;
+    border-left: 2px solid rgba(0, 0, 0, 0.9);
+}
+
+.main-menu ul {
+    list-style: none;
+    background: lime;
+    position: absolute;
+    display: none;
 }
 
 .visual {
