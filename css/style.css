@@ -59,7 +59,9 @@ h3,
 h4,
 h5,
 h6,
-p {
+p,
+ul,
+li {
     margin: 0;
     padding: 0;
 }
@@ -121,11 +123,16 @@ body {
     box-sizing: border-box;
 }
 
+
+/*헤더*/
+
 .header {
     /*내가 지정한 width 값에 보더 패딩 다 더해서 결국엔 940 px로 된다.*/
     box-sizing: border-box;
     /*w940px*/
-    height: 115px;
+    /*height: 115px;*/
+    /*컨텐츠가 추가 되면 계쏙 같이 늘어 난다 min-height*/
+    min-height: 115px;
     background-color: #FFFFFF;
     border-radius: 0 0 20px 20px;
     /*background-color: pink;*/
@@ -134,6 +141,22 @@ body {
     /*margin: 0 50px 100px 200px;*/
     /*h10vh*/
     /*height: 10vh;*/
+    position: relative;
+}
+
+
+/*로고*/
+
+.logo {
+    /*pos:r 이거는 relative는 붕 떠있는 상태다 즉 스티커와 비슷하다.*/
+    /*position: relative;
+    top: 50px;
+    left: 100px;*/
+    /*fixed는 absolute와 같은 화변 view port 기준이다.*/
+    /*position: fixed;*/
+    position: absolute;
+    top: 45px;
+    left: 60px;
 }
 
 .visual {
