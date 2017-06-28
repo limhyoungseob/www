@@ -87,6 +87,10 @@ p {
 
 /*.을찍고 뒤에 쓰면 클래스를 찾는다. 그냥쓰면 식별을 못한다.*/
 
+html {
+    font-size: 10px;
+}
+
 
 /*기본 스타일*/
 
@@ -94,6 +98,7 @@ body {
     /*앞에 글꼴이 인식 안될경우를 대비해서 , 찍도 뒤에 다른 글꼴을 사용한다.*/
     font-family: 'Noto Sans Regular', sans-serif;
     /*font-family: "돋움",Dotum;*/
+    font-size: 1.4rem;
 }
 
 .wrapper {
@@ -110,6 +115,14 @@ body {
     /*이미지가 올라가는거를 막아준다. 배경 이미지를 고정시킨다.*/
     /*background-attachment: fixed;*/
     height: 100vh;
+}
+
+
+/*링크스타일*/
+
+a {
+    color: inherit;
+    text-decoration: none;
 }
 
 .header,
@@ -142,6 +155,7 @@ body {
     /*h10vh*/
     /*height: 10vh;*/
     position: relative;
+    padding: 0 30px;
 }
 
 
@@ -157,6 +171,54 @@ body {
     position: absolute;
     top: 45px;
     left: 60px;
+}
+
+
+/*텍스트 링크 - 안내링크*/
+
+.info-menu {
+    /*background: pink;*/
+    /*기존에 점같은거를안쓰겟다 불릿을 안사용하겟다.*/
+    list-style: none;
+    font-size: 0;
+    text-align: right;
+    position: relative;
+    right: -10px;
+}
+
+
+/*클래스와 요소를 같이 선택한다. 즉 그 하위 메뉴 안에 요소만 li를 선택한다.*/
+
+.info-menu li,
+.info-menu a {
+    display: inline-block;
+}
+
+.info-menu li {
+    /*background: lime;*/
+    /*display: inline;*/
+    font-size: 1.4rem;
+    text-transform: uppercase;
+}
+
+
+/*.info-menu li a{
+    }*/
+
+.info-menu a {
+    /*패딩은 공백의 넓이 길이까지 늘어난다. */
+    padding: 10px;
+    /*background: yellow;*/
+    /*display: inline-block;*/
+}
+
+.info-menu li::after {
+    content: ":";
+}
+
+.info-menu li:last-child::after {
+    /*background: yellow;*/
+    content: "";
 }
 
 .visual {
