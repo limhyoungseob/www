@@ -1,39 +1,36 @@
 @charset "utf-8";
 
 /*웹폰트 선언*/
+
+
 /*@는 선언만한다. 화면에[ 바로 나오지는 않는다.*/
+
 @font-face {
-  /*글꼴 이름*/
+    /*글꼴 이름*/
     font-family: 'Noto Sans Regular';
     font-style: normal;
     font-weight: 400;
-    src: local('Noto Sans Regular'), local('NotoSans-Regular'),
-    url('font/eot/NotoSansKR-Regular-Hestia.eot'),
-    url('font/eot/NotoSansKR-Regular-Hestia.eot?#iefix') format('embedded-opentype'),
-    url('font/woff/NotoSansKR-Regular-Hestia.woff') format('woff'),
-    url('font/otf/NotoSansKR-Regular-Hestia.otf') format('opentype');
+    src: local('Noto Sans Regular'), local('NotoSans-Regular'), url('font/eot/NotoSansKR-Regular-Hestia.eot'), url('font/eot/NotoSansKR-Regular-Hestia.eot?#iefix') format('embedded-opentype'), url('font/woff/NotoSansKR-Regular-Hestia.woff') format('woff'), url('font/otf/NotoSansKR-Regular-Hestia.otf') format('opentype');
 }
+
 @font-face {
     font-family: 'Noto Sans Bold';
     font-style: normal;
     font-weight: 700;
-    src: local('Noto Sans Bold'), local('NotoSans-Bold'),
-    url('font/eot/NotoSansKR-Bold-Hestia.eot'),
-    url('font/eot/NotoSansKR-Bold-Hestia.eot?#iefix') format('embedded-opentype'),
-    url('font/woff/NotoSansKR-Bold-Hestia.woff') format('woff'),
-    url('font/otf/NotoSansKR-Bold-Hestia.otf') format('opentype');
-}
-@font-face {
-    font-family: 'webcafeIcon';
-    font-weight:400;
-    src: url('font/webcafeIcon.eot');
-    src: url('font/webcafeIcon.eot?#iefix') format('embedded-opentype'),
-         url('font/webcafeIcon.woff') format('woff'),
-         url('font/webcafeIcon.ttf') format('truetype'),
-         url('font/webcafeIcon.svg#webcaferegular') format('svg');
+    src: local('Noto Sans Bold'), local('NotoSans-Bold'), url('font/eot/NotoSansKR-Bold-Hestia.eot'), url('font/eot/NotoSansKR-Bold-Hestia.eot?#iefix') format('embedded-opentype'), url('font/woff/NotoSansKR-Bold-Hestia.woff') format('woff'), url('font/otf/NotoSansKR-Bold-Hestia.otf') format('opentype');
 }
 
+@font-face {
+    font-family: 'webcafeIcon';
+    font-weight: 400;
+    src: url('font/webcafeIcon.eot');
+    src: url('font/webcafeIcon.eot?#iefix') format('embedded-opentype'), url('font/webcafeIcon.woff') format('woff'), url('font/webcafeIcon.ttf') format('truetype'), url('font/webcafeIcon.svg#webcaferegular') format('svg');
+}
+
+
 /*이렇게 직접 url을 통해 글꼴을 받을 수 잇다.*/
+
+
 /*@import url('https://fonts.googleapis.com/css?family=Noto+Sans');*/
 
 
@@ -41,136 +38,167 @@
   background: yellow;
 
 }*/
+
+
 /*요소의 여백 최소화*/
+
+
 /* * 전체 선택자 */
+
+
 /** {
   margin: 0;
   padding: 0;
 }*/
 
-
-html, body, h1,h2,h3,h4,h5,h6,p{
-  margin: 0;
-  padding: 0;
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+    padding: 0;
 }
+
 
 /*제목크기 초기화*/
-h1,h2,h3,h4,h5,h6,p{
-  font-size: 1em;
-  /*fw:n*/
-  font-weight: normal;
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    font-size: 1em;
+    /*fw:n*/
+    font-weight: normal;
 }
+
+
 /*레이아웃*/
+
+
 /*.을찍고 뒤에 쓰면 클래스를 찾는다. 그냥쓰면 식별을 못한다.*/
 
+
 /*기본 스타일*/
-body{
-  /*앞에 글꼴이 인식 안될경우를 대비해서 , 찍도 뒤에 다른 글꼴을 사용한다.*/
-  font-family: 'Noto Sans Regular', sans-serif;
-  /*font-family: "돋움",Dotum;*/
+
+body {
+    /*앞에 글꼴이 인식 안될경우를 대비해서 , 찍도 뒤에 다른 글꼴을 사용한다.*/
+    font-family: 'Noto Sans Regular', sans-serif;
+    /*font-family: "돋움",Dotum;*/
 }
 
-
-.wrapper{ 
-  /*background-color: silver;*/
-  /*background-image: linear-gradient(to bottom, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 99%,rgba(0,0,0,0) 100%);*/
-  /*background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);*/
-  /*background-image: linear-gradient(60deg, #abecd6 0%, #fbed96 100%);*/
-  
-  /*background-image: url(images/bg_flower.png),linear-gradient(to bottom, rgba(0,0,0,0.5) 0%, rgba(255,255,255,1) 100%);*/
-
-  /*그림을 하나만 나오게 한다. 또한 2가지 이미지에 따로 적용하기 위해 , 를 사용한다.*/
-  /*background-repeat: no-repeat,repeat;
+.wrapper {
+    /*background-color: silver;*/
+    /*background-image: linear-gradient(to bottom, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 99%,rgba(0,0,0,0) 100%);*/
+    /*background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);*/
+    /*background-image: linear-gradient(60deg, #abecd6 0%, #fbed96 100%);*/
+    /*background-image: url(images/bg_flower.png),linear-gradient(to bottom, rgba(0,0,0,0.5) 0%, rgba(255,255,255,1) 100%);*/
+    /*그림을 하나만 나오게 한다. 또한 2가지 이미지에 따로 적용하기 위해 , 를 사용한다.*/
+    /*background-repeat: no-repeat,repeat;
   background-position: 50% 0%, 0% 0%;*/
-  /*위에 3개를 한번에 나타내기*/
-  background: url(images/bg_flower.png) no-repeat 50% 0%, linear-gradient(to bottom, rgba(0,0,0,0.5) 0%, rgba(255,255,255,1) 100%) repeat 0% 0%;
-
-  /*이미지가 올라가는거를 막아준다. 배경 이미지를 고정시킨다.*/
-  /*background-attachment: fixed;*/
-  height: 100vh;
+    /*위에 3개를 한번에 나타내기*/
+    background: url(images/bg_flower.png) no-repeat 50% 0%, linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(255, 255, 255, 1) 100%) repeat 0% 0%;
+    /*이미지가 올라가는거를 막아준다. 배경 이미지를 고정시킨다.*/
+    /*background-attachment: fixed;*/
+    height: 100vh;
 }
 
-.header, .visual, .main-content, .slogan, .footer{
-  width: 940px; 
-  margin: 0 auto;
-  /*상자들이 패딩이나 마진으로 넘어가는 부분을 원래 부분으로 맞춰줌.*/
-  box-sizing: border-box;
+.header,
+.visual,
+.main-content,
+.slogan,
+.footer {
+    width: 940px;
+    margin: 0 auto;
+    /*상자들이 패딩이나 마진으로 넘어가는 부분을 원래 부분으로 맞춰줌.*/
+    box-sizing: border-box;
 }
-.header{
-  /*내가 지정한 width 값에 보더 패딩 다 더해서 결국엔 940 px로 된다.*/
-  box-sizing: border-box;
-  /*w940px*/
-  height: 115px;
-  background-color: #FFFFFF;
-  border-radius: 0 0 20px 20px;
-  
-  /*background-color: pink;*/
-  /*border: 10px solid blue;
+
+.header {
+    /*내가 지정한 width 값에 보더 패딩 다 더해서 결국엔 940 px로 된다.*/
+    box-sizing: border-box;
+    /*w940px*/
+    height: 115px;
+    background-color: #FFFFFF;
+    border-radius: 0 0 20px 20px;
+    /*background-color: pink;*/
+    /*border: 10px solid blue;
   padding: 20px;*/
-  /*margin: 0 50px 100px 200px;*/
-  
-  /*h10vh*/
-  /*height: 10vh;*/
+    /*margin: 0 50px 100px 200px;*/
+    /*h10vh*/
+    /*height: 10vh;*/
 }
-.visual{
-  /*background-color: lime;*/
-  /*height: 10vh;*/
-  height: 120px;
-}
-.main-content{
-  background-color: #fff;
-  border-radius: 20px 20px 0 0;
-  /*height: 60vh;높으를 지우면 컨텐츠만큼 높이가 올라온다.*/
-  min-height: 400px;
-  display: flex;
-  padding: 30px;  
-  /*flex-direction: column;*/
-  flex-direction: row;
-  /*justify-content: flex-end;*/
-  justify-content: space-between;
-  /*컨텐트 값들을 정렬한다.*/
-  /*justify-content: space-between;*/
-  /*justify-content:space-around; */
-  /*justify-content: center; 가운데 정렬*/
 
-  /*부모 영역의 아래쪽으로 group들이 붙어진다.*/
-  /*align-items: flex-end;*/
-  /*align-items: center;*/
-  /*align-items: flex-start;*/
+.visual {
+    /*background-color: lime;*/
+    /*height: 10vh;*/
+    height: 120px;
+}
 
-  
+.main-content {
+    background-color: #fff;
+    border-radius: 20px 20px 0 0;
+    /*height: 60vh;높으를 지우면 컨텐츠만큼 높이가 올라온다.*/
+    min-height: 400px;
+    display: flex;
+    padding: 30px;
+    /*flex-direction: column;*/
+    flex-direction: row;
+    /*justify-content: flex-end;*/
+    justify-content: space-between;
+    /*컨텐트 값들을 정렬한다.*/
+    /*justify-content: space-between;*/
+    /*justify-content:space-around; */
+    /*justify-content: center; 가운데 정렬*/
+    /*부모 영역의 아래쪽으로 group들이 붙어진다.*/
+    /*align-items: flex-end;*/
+    /*align-items: center;*/
+    /*align-items: flex-start;*/
 }
-.group{
-  /*background-color: orange;*/
-}
-.group1{
-  width: 250px;
-  /*height: 100px;*/
-  /*order: 1;*/
-  /*align-self: flex-end;*/
-}
-.group2{
-  width: 380px;
-  /*height: 200px;*/
-  /*order: 2;*/
-}
-.group3{
-  width: 190px;
-  /*height: 150px;*/
-  /*order: 3;*/
 
-  /*기본 order 값이 0으로 되어 있으므로 -1을 쓰면 가장 앞에 간다.*/
-  /*order: -1;*/
+.group {
+    /*background-color: orange;*/
 }
-.slogan{
-  /*background-color: yellow;*/
-  height: 10vh;
+
+.group1 {
+    width: 250px;
+    /*height: 100px;*/
+    /*order: 1;*/
+    /*align-self: flex-end;*/
 }
-.footer-bg{
-  /*background-color: aqua;*/
-  background: linear-gradient(to bottom, rgba(0,0,0,0.5) 0%, rgba(255,255,255,1) 100%);
+
+.group2 {
+    width: 380px;
+    /*height: 200px;*/
+    /*order: 2;*/
 }
-.footer{
-  /*background-color: skyblue;*/
-  height: 10vh;
+
+.group3 {
+    width: 190px;
+    /*height: 150px;*/
+    /*order: 3;*/
+    /*기본 order 값이 0으로 되어 있으므로 -1을 쓰면 가장 앞에 간다.*/
+    /*order: -1;*/
+}
+
+.slogan {
+    /*background-color: yellow;*/
+    height: 10vh;
+}
+
+.footer-bg {
+    /*background-color: aqua;*/
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(255, 255, 255, 1) 100%);
+}
+
+.footer {
+    /*background-color: skyblue;*/
+    height: 10vh;
 }
