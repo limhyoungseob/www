@@ -145,7 +145,7 @@ a {
     /*w940px*/
     /*height: 115px;*/
     /*컨텐츠가 추가 되면 계쏙 같이 늘어 난다 min-height*/
-    min-height: 115px;
+    /*min-height: 115px;*/
     background-color: #FFFFFF;
     border-radius: 0 0 20px 20px;
     /*background-color: pink;*/
@@ -155,7 +155,7 @@ a {
     /*h10vh*/
     /*height: 10vh;*/
     position: relative;
-    padding: 0 30px;
+    padding: 0 30px 40px 30px;
 }
 
 
@@ -251,7 +251,10 @@ a {
     border-radius: 0 0 25px 0;
 }
 
-.main-menu>li>a {
+
+/*.main-menu>li>a {*/
+
+.main-menu span {
     font-size: 1.6rem;
     font-family: "Noto Sans Bold";
     /*요새는 투명도 주는게 트랜드 그때는 16진수가아닌 rgba 방식을 사용*/
@@ -269,19 +272,22 @@ a {
 
 /*hover는 가상 앨리먼트라고 부른다. 마우스는 올렸을때를 hover*/
 
-.main-menu>li>a:hover {
+.main-menu span:hover,
+.main-menu span:focus {
     /*color: hsla(30, 80%, 70%, 1);*/
     /*color: rgba(255, 255, 255, 0.7);
     text-shadow: 1px 1px 0 #f00, 1px -1px 0 #f00, -1px 1px 0 #f00, -1px -1px 0 #f00;*/
     /*border-bottom: 2px solid #181818;*/
     color: rgba(255, 255, 255, 1);
     text-shadow: 1px 1px 0 rgba(93, 93, 93, 0.95), 1px -1px 0 rgba(93, 93, 93, 0.95), -1px 1px 0 rgba(93, 93, 93, 0.95), -1px -1px 0 rgba(93, 93, 93, 0.95);
+    outline: 0;
 }
 
 
 /*hover 마우스 올리면 다음에 밑에 줄나오게 한다.*/
 
-.main-menu>li>a:hover::after {
+.main-menu span:hover::after,
+.main-menu span:focus::after {
     content: "";
     display: block;
     background: skyblue;
@@ -322,34 +328,47 @@ a {
 .main-menu ul a:hover::before,
 .main-menu ul a:focus::before {
     content: "c";
+    /*상속되어 있어서 위에서 2px 내렷으니까 더 내려야 차이가 난다.*/
+    /*top: 10px;*/
+    /*position: relative;*/
+}
+
+.main-menu ul a {
+    padding: 8px 15px 7px 0;
+    /*background: orange;*/
+    display: block;
 }
 
 .about-html {
     /*!important를 쓰면 구체성이 1등이 된다. 무조건 보인다.*/
     /*display: flex !important;*/
-    display: block;
-    top: 0;
+    display: none;
     left: 0;
 }
 
 .about-CSS {
     display: none;
+    left: 0;
 }
 
 .web-standards {
     display: none;
+    left: 0;
 }
 
 .web-accessibility {
     display: none;
+    left: -140px;
 }
 
 .qna {
     display: none;
+    left: -170px;
 }
 
 .archive {
     display: none;
+    right: -25px;
 }
 
 .visual {
