@@ -339,6 +339,11 @@ a {
     /*position: relative;*/
 }
 
+.main-menu ul a:hover,
+.main-menu ul a:focus {
+    color: red;
+}
+
 .main-menu ul a {
     padding: 8px 15px 7px 0;
     /*background: orange;*/
@@ -377,10 +382,56 @@ a {
     right: -25px;
 }
 
+
+/*비주얼*/
+
+@keyframes text-ani {
+    /*시작과 끝을 명시하자 from to 도 괜춘*/
+    0% {
+        font-size: 12px;
+        color: rgba(0, 0, 0, 0);
+        /*margin: 0 0 0 0;*/
+        /*padding: 0 0 0 0;*/
+        /*top: 0;
+        left: 0;*/
+        transform: translate(0, 0);
+    }
+    100% {
+        flex-size: 24px;
+        color: rgba(0, 0, 0, 1);
+        /*margin: 75px 0 0 400px;*/
+        /*padding: 75px 0 0 400px;*/
+        /*top: 75px;
+        left: 400px;*/
+        transform: translate(600px, 75px);
+    }
+}
+
 .visual {
     /*background-color: lime;*/
     /*height: 10vh;*/
+    position: relative;
     height: 120px;
+}
+
+.visual-text {
+    /*조지아로 보이고 다음에 업으면 time new roman 없으면 time 없으면 serif*/
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    display: inline-block;
+    /*position: absolute;*/
+    /*background: yellow;
+    animation-name: text-ani;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-delay: 2s;
+    color: rgba(0, 0, 0, 0);
+    animation-timing-function: ease-in-out;*/
+    /*애니메이션 실회 횟수*/
+    /*animation-iteration-count: 3;
+    animation-direction: alternate;*/
+    /*단축 표현 필수 조건은 애니메이션이름 듀레이션시간.*/
+    /*animation: text-ani 0.5s forwards 2s ease-in-out 3 alternate;*/
+    animation: text-ani 0.5s forwards ease-in-out;
 }
 
 .main-content {
