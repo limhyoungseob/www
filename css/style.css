@@ -272,6 +272,12 @@ a {
 
 /*hover는 가상 앨리먼트라고 부른다. 마우스는 올렸을때를 hover*/
 
+
+/*focus를 사용해서 키보드를 통해서도 움직일수 있게 한다.*/
+
+
+/*hover는 마우스를 올렸을때 효과를 준다.*/
+
 .main-menu span:hover,
 .main-menu span:focus {
     /*color: hsla(30, 80%, 70%, 1);*/
@@ -311,7 +317,7 @@ a {
     /*display: none;*/
     /*rap은 줄바꿈이고 nowrap은 줄바꿈 하지 않겟다.*/
     white-space: nowrap;
-    top: 47px;
+    top: 45px;
 }
 
 .main-menu ul li {
