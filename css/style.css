@@ -425,8 +425,14 @@ a {
 }
 
 .visual::before {
-    background: url(images/ani_flower_01.png) no-repeat 0px -10px, url(images/ani_flower_02.png) no-repeat 670px 0;
-    /*background: yellow;*/
+    background: url("images/ani_flower_01.png") no-repeat 0px -10px, url(images/ani_flower_02.png) no-repeat 670px 0;
+    /*background-color: yellow;*/
+    animation-name: flower-ani;
+    animation-duration: 4s;
+    animation-fill-mode: backwards;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
 }
 
 .visual::after {
@@ -434,6 +440,22 @@ a {
     따라서 밑에다 해서 순서를 나타내야 한다.*/
     background: url(images/ani_flower_03.png) no-repeat 300px 0, url(images/ani_flower_04.png) no-repeat 800px 0;
     /*background-color: pink;*/
+    animation-name: flower-ani;
+    animation-duration: 3s;
+    animation-delay: 6s;
+    animation-fill-mode: backwards;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes flower-ani {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 .visual-text {
