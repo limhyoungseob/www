@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>box model 관련 속성 익히기</title>
+    <style>
+        .padding {
+            background: yellow;
+            padding: 10px 20px 30px 40px;
+            /*border-top: 1px solid #000;*/
+            border-width: 5px 10px 15px 20px;
+            border-style: solid dotted dashed double;
+            border-color: black red blue green;
+        }
+        
+        .margin {
+            background: pink;
+            /*마진은 겹침현상이 있어서 위에 20 밑에는 40 주면 겹쳐서 40으로 된다.*/
+            margin: 20px 30px 40px 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>padding 속성</h1>
+    <div class="padding">요소박스의 안쪽여백 a</div>
+    <div class="padding">요소박스의 안쪽여백 b</div>
+    <div class="padding">요소박스의 안쪽여백 c</div>
+    <h1>margin 속성</h1>
+    <div class="margin">요소박스의 바깥쪽여백 a</div>
+    <div class="margin">요소박스의 바깥쪽여백 b</div>
+    <div class="margin">요소박스의 바깥쪽여백 c</div>
+</body>
+
+</html>

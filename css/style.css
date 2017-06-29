@@ -312,17 +312,24 @@ a {
     display: inline-block;
 }
 
+.main-menu ul a::before {
+    font-family: "webcafeicon";
+    content: "r";
+    position: relative;
+    top: 2px;
+}
+
+.main-menu ul a:hover::before,
+.main-menu ul a:focus::before {
+    content: "c";
+}
+
 .about-html {
     /*!important를 쓰면 구체성이 1등이 된다. 무조건 보인다.*/
     /*display: flex !important;*/
     display: block;
     top: 0;
     left: 0;
-}
-
-.about-html>li>a::before {
-    content: "*";
-    padding-left: 10px;
 }
 
 .about-CSS {

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>float 속성 익히기</title>
+    <style>
+        .box {
+            background: yellow;
+            width: 500px;
+            /*노란색 상자가 늘어나고 상자 밖으로 밑에 부분을 밀어 낸다.
+            하지만 그림이 relative로 하고 그리을 밖으로 옮기면 안보이게 된다.*/
+            /*overflow: hidden;*/
+        }
+        
+        .box img {
+            float: right;
+            position: relative;
+            right: -50px;
+        }
+        
+        .note {
+            background: pink;
+            /*clear: both;*/
+            /*margin-top: 100px;*/
+            /*이제 여기부터는 float 부분을 벗어난다는 의미*/
+            /*clear: both;*/
+        }
+        
+        .box::after {
+            content: "";
+            background: lime;
+            display: block;
+            clear: both;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <img src="../images/news.gif" alt=""> 이와 함께 강 장관은 웜비어군
+    </div>
+    <div class="note">
+        이와 함께 강 장관은 웜비어군 사망에 대해 다시 한 번 우리 정부와 국민은 깊은 애도와 위로를 표하면서 "비극적 사건을 계기로 한미 양국이 북한 인권 상황 개선을 위해서도 긴밀히 공조해 나가야 할 것"이라고 말했다.이와 함께 강 장관은 웜비어군 사망에 대해 다시 한 번 우리 정부와 국민은 깊은 애도와 위로를 표하면서 "비극적 사건을 계기로 한미 양국이 북한 인권 상황 개선을 위해서도 긴밀히 공조해 나가야 할 것"이라고 말했다.
+
+    </div>
+</body>
+
+</html>
