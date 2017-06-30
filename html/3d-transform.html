@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>3D Transform 속성 익히기</title>
+    <style>
+        .container {
+            margin: 50px auto;
+            border: 1px solid #999;
+            width: 1000px;
+            height: 500px;
+            overflow: hidden;
+            /*perspective: 1000px;*/
+        }
+        
+        .box {
+            /*가로로 배치하는법 float*/
+            float: left;
+            width: 200px;
+            height: 200px;
+            margin: 20px;
+            background: lime;
+            /*45도로 돌렷는데 작아 보인다 왜냐면 색이 하나기 때문에*/
+            transform: perspective(800px) rotateY(50deg);
+            /*transform: rotateY(90deg);*/
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+
+</html>
