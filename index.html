@@ -111,7 +111,38 @@
         </div>
         <main class="main-content">
             <!--div.group.group${콘텐츠칼럼$}*3-->
-            <div class="group group1">콘텐츠칼럼1</div>
+            <div class="group group1">
+                <div class="login">
+                    <h2 class="login-heading">로그인</h2>
+                    <!--form만 했는데 action이 나온다. 이거는 서버 URL을 적으면 된다.-->
+                    <form action="javascript:alert('회원님 반갑습니다.');" class="login-form">
+                        <!--fieldset>legend-->
+                        <!--폼을 묶을때는 전용 fieldset을 써준다.-->
+                        <fieldset>
+                            <legend>회원 로그인 폼</legend>
+                            <div class="user-email">
+                                <!--label+input#user-email-->
+                                <label for="user-email">아이디</label>
+                                <!--required는 필수적이다 즉 값을 입력안하고 누르면 제대로 쓰라고 나온다.-->
+                                <input type="email" id="user-email" required placeholder="이메일주소">
+                            </div>
+                            <div class="user-pw">
+                                <label for="user-pw">비밀번호</label>
+                                <input type="password" id="user-pw" required placeholder="최소 8자리 이상">
+                            </div>
+                            <!--전송하는 역할을 한다 -> form이 가지고 있는 액션으로 가져온다.-->
+                            <button type="submit" class="btn-login">로그인</button>
+                        </fieldset>
+
+                    </form>
+                    <ul class="member">
+                        <!--li*2>a[class href="#"]-->
+                        <li><a href="#" class="join">회원가입</a></li>
+                        <li><a href="#" class="find">아이디/비밀번호 찾기</a></li>
+                    </ul>
+                </div>
+            </div>
+
             <div class="group group2">콘텐츠칼럼2</div>
             <div class="group group3">콘텐츠칼럼3</div>
         </main>
