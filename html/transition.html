@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Transition 익히기</title>
+    <style>
+        /*트렌젝션은 시작 요소에 할당을 한다.*/
+        
+        .box1 {
+            width: 100px;
+            height: 100px;
+            background: red;
+            /*transition-property: border-radius, background;
+            transition-duration: 1s, 2s;
+            transition-delay: 0s, 1s;
+            transition-timing-function: ease-in-out;*/
+            /*transition: border-radius 1s 0s ease-in-out, background 1s 0s;*/
+            /*all 을쓰게 되면 hover와 focus를 찾아 차이점을 모두 변환 시킨다.*/
+            transition: all 1s ease-in-out;
+        }
+        
+        .box1:hover,
+        .box1:focus {
+            border-radius: 50%;
+            background: lime;
+            outline: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1" tabindex="0"></div>
+</body>
+
+</html>
