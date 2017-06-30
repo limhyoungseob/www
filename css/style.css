@@ -28,6 +28,17 @@
 }
 
 
+/*숨김 컨텐츠*/
+
+legend {
+    /*이렇게 하면 완전히 감춰지지 않는다*/
+    /*display: none;*/
+    position: absolute;
+    left: -999px;
+    /*background: lime;*/
+}
+
+
 /*이렇게 직접 url을 통해 글꼴을 받을 수 잇다.*/
 
 
@@ -235,6 +246,7 @@ a {
     padding-left: 225px;
     /*font-size: 1.8rem;*/
     height: 45px;
+    box-shadow: 3px 3px 5px 3px gray;
 }
 
 .main-menu>li {
@@ -508,6 +520,82 @@ a {
     /*height: 100px;*/
     /*order: 1;*/
     /*align-self: flex-end;*/
+}
+
+
+/*로그인*/
+
+.login {
+    background: radial-gradient(circle at center top, #96e6a1 0%, #d4fc79 100%);
+    padding: 10px;
+    border-radius: 15px;
+    /* 0 0 10px 번짐의 효과가 얼마나 한지 10px 번짐 효과*/
+    box-shadow: 3px 3px 5px 3px gray;
+}
+
+.login-heading {
+    font-family: "Noto Sans Bold", sans-serif;
+    font-size: 1.6rem;
+    color: rgba(93, 93, 93, 0.95);
+    text-shadow: 1px 1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, -1px -1px 0 #fff;
+    text-indent: 10px;
+}
+
+.login-form fieldset {
+    padding: 0 0 10px 0;
+    border: 0;
+    border-bottom: 1px solid #aaa;
+    margin: 0;
+    position: relative;
+}
+
+.login-form {
+    padding: 10px;
+    background: white;
+    margin-top: 10px;
+    border-radius: 10px 10px 0 0;
+}
+
+.login-form input {
+    box-sizing: border-box;
+    width: 95px;
+    height: 22px;
+    border: 1px solid #aaa;
+    padding: 1px 1px 1px 1px;
+}
+
+.btn-login {
+    widows: 50px;
+    height: 50px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: 0;
+    padding: 0 5px;
+    /*마우스에 올리면 손가락 표시가 되게 한다.*/
+    cursor: pointer;
+}
+
+.member {
+    padding: 0 10px 10px 10px;
+    background: white;
+    border-radius: 0 0 10px 10px;
+    /*이걸 주면 * 앞에 점찍히는거를 방지할 수 있다*/
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.user-pw {
+    /*background: lime;*/
+    margin-top: 5px;
+}
+
+.login-form label {
+    display: inline-block;
+    width: 3.8em;
+    cursor: pointer;
+    /*background: yellow;*/
 }
 
 .group2 {
