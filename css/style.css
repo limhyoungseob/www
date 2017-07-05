@@ -2,6 +2,7 @@
 
 /*웹폰트 선언*/
 
+@import"fontello.css";
 
 /*@는 선언만한다. 화면에[ 바로 나오지는 않는다.*/
 
@@ -112,6 +113,15 @@ body {
     font-size: 1.4rem;
 }
 
+input,
+textarea,
+select,
+option,
+button {
+    font-family: inherit;
+    font-size: inherit;
+}
+
 .wrapper {
     /*background-color: silver;*/
     /*background-image: linear-gradient(to bottom, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 99%,rgba(0,0,0,0) 100%);*/
@@ -159,6 +169,7 @@ a {
     /*min-height: 115px;*/
     background-color: #FFFFFF;
     border-radius: 0 0 20px 20px;
+    box-shadow: 3px 3px 5px 3px gray;
     /*background-color: pink;*/
     /*border: 10px solid blue;
   padding: 20px;*/
@@ -409,7 +420,7 @@ a {
         transform: translate(0, 0);
     }
     100% {
-        flex-size: 24px;
+        font-size: 24px;
         color: rgba(0, 0, 0, 1);
         /*margin: 75px 0 0 400px;*/
         /*padding: 75px 0 0 400px;*/
@@ -523,6 +534,9 @@ a {
 }
 
 
+/*로그인 float*/
+
+
 /*로그인*/
 
 .login {
@@ -542,7 +556,7 @@ a {
 }
 
 .login-form fieldset {
-    padding: 0 0 10px 0;
+    padding: 0 0 15px 0;
     border: 0;
     border-bottom: 1px solid #aaa;
     margin: 0;
@@ -558,14 +572,16 @@ a {
 
 .login-form input {
     box-sizing: border-box;
-    width: 95px;
+    width: 100px;
     height: 22px;
     border: 1px solid #aaa;
     padding: 1px 1px 1px 1px;
 }
 
 .btn-login {
-    widows: 50px;
+    background: rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    width: 50px;
     height: 50px;
     position: absolute;
     top: 0;
@@ -574,6 +590,7 @@ a {
     padding: 0 5px;
     /*마우스에 올리면 손가락 표시가 되게 한다.*/
     cursor: pointer;
+    /*font-size: 1.2rem;*/
 }
 
 .member {
@@ -582,8 +599,35 @@ a {
     border-radius: 0 0 10px 10px;
     /*이걸 주면 * 앞에 점찍히는거를 방지할 수 있다*/
     list-style-type: none;
-    display: flex;
-    justify-content: space-between;
+    font-size: 1.3rem;
+    /*display: flex;*/
+    /*justify-content: space-between;*/
+}
+
+
+/*플로트 이슈를 해결하기 위한 clearfix*/
+
+.member::after {
+    content: "";
+    display: block;
+    /*강제 마진을 준다 float높이 만큼*/
+    clear: both;
+}
+
+.icon-right-open::before,
+.icon-right-outline::before {
+    color: red;
+    /*font-size: 1rem;*/
+}
+
+.join {
+    /*background: yellow;*/
+    float: left;
+}
+
+.find {
+    /*background: pink;*/
+    float: right;
 }
 
 .user-pw {
@@ -592,10 +636,18 @@ a {
 }
 
 .login-form label {
+    /*레이블 테그는 인라인 상자라 적용이 안된다.*/
     display: inline-block;
     width: 3.8em;
     cursor: pointer;
     /*background: yellow;*/
+}
+
+.member {
+    /*border-top: 1px solid #aaa;*/
+    list-style-type: none;
+    background: white;
+    border-radius: 0 0 15px 15px;
 }
 
 .group2 {
