@@ -40,3 +40,11 @@ $(function() {
 **이것**은 ~~마크다운 문서~~ 입니다.
 
 
+####code ~/.bashrc 이렇게 입력해서 git alias를 사용해서 간단하게 작업할 수 있다.     
+alias c='clear'  
+alias gs='git status'  
+alias ga='git add *'  
+alias gp='git push origin master'  
+function gc(){  
+git commit -m "$1"  
+}  
