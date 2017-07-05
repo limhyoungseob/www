@@ -112,13 +112,16 @@ body {
     font-family: 'Noto Sans Regular', sans-serif;
     /*font-family: "돋움",Dotum;*/
     font-size: 1.4rem;
+    /*line-height는 글자의 크기와 약간의 테두리 관련해서 나타낸다.*/
+    line-height: 1.15;
 }
 
 input,
 textarea,
 select,
 option,
-button {
+button,
+{
     font-family: inherit;
     font-size: inherit;
 }
@@ -192,7 +195,7 @@ a {
     /*fixed는 absolute와 같은 화변 view port 기준이다.*/
     /*position: fixed;*/
     position: absolute;
-    top: 50px;
+    top: 45px;
     left: 60px;
 }
 
@@ -580,7 +583,7 @@ a {
 }
 
 .btn-login {
-    background: rgba(0, 0, 0, 0.15);
+    background: linear-gradient(to bottom, #eee, #ccc);
     border-radius: 4px;
     width: 50px;
     height: 50px;
@@ -706,6 +709,133 @@ a {
 .validation-list a {
     display: block;
 }
+
+
+/*웹관련 용어*/
+
+.term {
+    background: linear-gradient(to bottom, #eee 0%, #ccc 100%);
+    margin-top: 20px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    /*padding을 2개만 주면 처음은 위아래 두번재는 왼쪽오른쪽 값이 된다.*/
+    padding: 10px 15px;
+}
+
+.term-heading {
+    font-size: 1.6rem;
+    font-family: "Noto Sans Bold";
+}
+
+.term-list {
+    margin: 10px 0 0 0;
+}
+
+.term-list::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+
+/*밑에 brief를 0으로 해서 밑에게 먼저 우선되니까 !important를 적용한다. 또한
+dd.term-list-brief이런식으로 정확히 명시해줘도 된다.*/
+
+.term-list-brief {
+    margin-top: 5px !important;
+}
+
+.term-list-thumbnail,
+.term-list-brief {
+    margin: 0;
+}
+
+.term-list-subject,
+.term-list-brief {
+    float: right;
+    width: 145px;
+}
+
+.term-list-subject {}
+
+.term-list-thumbnail {
+    float: left;
+}
+
+.even .term-list-subject,
+.even .term-list-brief {
+    float: left;
+}
+
+.even .term-list-thumbnail {
+    float: right;
+}
+
+
+/*.term {
+    margin-top: 20px;
+    padding: 12px 15px 15px 15px;
+    background: linear-gradient(to bottom, #eee, #ccc);
+    border: 1px solid #aaa;
+    border-radius: 15px;
+}
+
+.term-list {
+    margin: 5px 0 0 0;
+    padding: 0;
+}
+
+.term h2 {
+    padding: 0;
+    margin: 0;
+    font-family: "Noto Sans Bold", sans-serif;
+    font-size: 1.6rem;
+    color: black;
+}
+
+.term dt {
+    display: inline-block;
+    붕 뜨게 하고 싶으면 relative에서 상위 좌표를 -10px로 준다.
+    position: relative;
+    top: -5px;
+    margin: 0;
+    padding: 0;
+    font-family: "Noto Sans Bold", sans-serif;
+    font-size: 1.6rem;
+    color: blue;
+}
+
+.term dd {
+    margin: 0;
+    padding: 0;
+}
+
+그냥 :first-child를 사용하면 dt가 면저 선택된다.
+.term dl dd:nth-of-type(1) {
+    float: left;
+    margin: 0 15px 0 0;
+    padding: 0;
+}*/
+
+
+/*.term {
+    background: lime;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.term-heading {
+    font-size: 1.6rem;
+    font-family: "Noto Sans Bold";
+}
+
+.term ul {
+    list-style-type: none;
+}
+
+.term-list-thumbnail {
+    float: left;
+}*/
 
 
 /*.validation a {
