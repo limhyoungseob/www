@@ -367,7 +367,7 @@ a {
 
 .main-menu ul a:hover,
 .main-menu ul a:focus {
-    color: red;
+    color: green;
 }
 
 .main-menu ul a {
@@ -1066,6 +1066,170 @@ dd.term-list-brief이런식으로 정확히 명시해줘도 된다.*/
 .pds-sub {
     display: block;
 }*/
+
+
+/*공지사항 및 자료실*/
+
+
+/*.board {
+    position: relative;
+    margin-top: 20px;
+}
+
+.notice-more,
+.pds-more {
+    position: absolute;
+    right: 5px;
+}
+
+.board ul time {
+    float: right;
+}
+
+.notice-list {
+    display: none;
+}
+
+.pds-list {
+}
+
+.board li a::before {
+    font-family: "webcafeicon";
+    content: "r";
+    position: relative;
+    top: 2px;
+}
+
+.board ul {
+    line-height: 30px;
+    position: absolute;
+    top: 40px;
+    padding: 0 0 0 10px;
+    list-style-type: none;
+}
+
+.board h2 {
+    float: left;
+    position: relative;
+}
+
+.notice-heading,
+.pds-heading {
+    margin: 0;
+    color: rgba(93, 93, 93, 0.95);
+    text-shadow: 1px 1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, -1px -1px 0 #fff;
+    padding: 5px;
+    border: 1px solid #aaa;
+    background: linear-gradient(to bottom, #eee, #ccc);
+    border-radius: 4px 4px 0 0;
+    border-bottom: 0;
+}
+
+.act .notice-heading,
+.act .pds-heading {
+    background: white;
+    border: 1px solid red;
+    border-bottom: 0;
+    color: red;
+    outline: 0;
+}*/
+
+
+/*공지사항 및 자료실 최종본*/
+
+.board {
+    height: 160px;
+    position: relative;
+    margin-top: 20px;
+}
+
+.notice-heading,
+.pds-heading {
+    float: left;
+    border: 1px solid #aaa;
+    border-radius: 5px 5px 0 0;
+    color: #181818;
+    background: linear-gradient(to bottom, #eee, #ccc);
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.act .notice-heading,
+.act .pds-heading {
+    border-color: green;
+    border-bottom-color: white;
+    background: white;
+    color: green;
+    outline: 0;
+}
+
+.notice-list,
+.pds-list {
+    box-sizing: border-box;
+    /*크기를 줘야지 absolute가 되지 않도록 크기를 부모만큼 줘야 한다.*/
+    width: 100%;
+    list-style-type: square;
+    position: absolute;
+    top: 35px;
+    left: 0;
+    padding-left: 20px;
+}
+
+
+/*상자와 상자사이는 lint-height가 아니라 margin*/
+
+.notice-list li,
+.pds-list li {
+    margin: 5px 0;
+}
+
+.notice-list time,
+.pds-list time {
+    float: right;
+}
+
+.notice-list a,
+.pds-list a {
+    float: left;
+    width: 285px;
+    /*한줄일 경우에만 적용 가능하고 white space overflow text-overflow 3개를 한번에 사용한다.*/
+    /*한줄로 인식한다. 무조건*/
+    white-space: nowrap;
+    overflow: hidden;
+    /*ellipsis는 css3때 추가된것으로 추가된 부분은 ...으로 바뀐다.*/
+    text-overflow: ellipsis;
+}
+
+.notice-more,
+.pds-more {
+    position: absolute;
+    top: 0;
+    right: 0px;
+    padding: 8px 0 0 0;
+}
+
+.notice-more::before,
+.pds-more::before {
+    content: "p";
+    font-family: "webcafeIcon";
+    color: hsla(120, 100%, 40%, 1);
+    position: relative;
+    top: 2px;
+}
+
+.notice-list,
+.pds-list,
+.notice-more,
+.pds-more {
+    display: none;
+}
+
+.act .notice-list,
+.act .pds-list,
+.act .notice-more,
+.act .pds-more {
+    display: block;
+}
 
 .slogan {
     height: 10vh;
