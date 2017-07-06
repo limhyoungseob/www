@@ -1140,7 +1140,7 @@ dd.term-list-brief이런식으로 정확히 명시해줘도 된다.*/
 .board {
     height: 160px;
     position: relative;
-    margin-top: 20px;
+    margin-top: 30px;
 }
 
 .notice-heading,
@@ -1230,6 +1230,59 @@ dd.term-list-brief이런식으로 정확히 명시해줘도 된다.*/
 .act .pds-more {
     display: block;
 }
+
+
+/*새소식 디자인*/
+
+
+/*.news {
+    position: relative;
+    margin-top: 20px;
+    background: yellow;
+}
+
+.news-more {
+    top: 0;
+    right: 0;
+    position: absolute;
+}
+
+.news-form {
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid #aaa;
+}
+
+.etc {
+    background: red;
+    margin: 0 20px 0 0;
+    float: left;
+}
+
+.etc figcaption {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.news-list {
+    list-style-type: none;
+    background: lime;
+}
+
+.top {
+    background: pink;
+    margin-bottom: 3px;
+}
+
+.top::before {
+    content: "r";
+    font-family: "webcafeIcon";
+    position: relative;
+    top: 2px;
+}*/
+
+
+/*새소식 디자인 최종*/
 
 .slogan {
     height: 10vh;
