@@ -120,8 +120,7 @@ input,
 textarea,
 select,
 option,
-button,
-{
+button {
     font-family: inherit;
     font-size: inherit;
 }
@@ -858,13 +857,13 @@ dd.term-list-brief이런식으로 정확히 명시해줘도 된다.*/
 .bbb {
     margin-top: 15px;
 }
+*/
 
-.slogan {
-   
-    height: 10vh;
-}*/
 
-.search {
+/*search 연습--------------------*/
+
+
+/*.search {
     position: relative;
     padding: 15px 10px 8px 13px;
     background: linear-gradient(to bottom, #eee 0%, #ccc 100%);
@@ -878,7 +877,6 @@ dd.term-list-brief이런식으로 정확히 명시해줘도 된다.*/
 }
 
 .searching {
-    /*background: lime;*/
 }
 
 .btn-search {
@@ -888,17 +886,24 @@ dd.term-list-brief이런식으로 정확히 명시해줘도 된다.*/
     top: 10px;
     right: 0;
     padding: 0 5px;
-    /*마우스에 올리면 손가락 표시가 되게 한다.*/
     cursor: pointer;
-    /*font-size: 1.2rem;*/
+}*/
+
+
+/*search 연습--------------------*/
+
+.search {
+    background: yellow;
+}
+
+.slogan {
+    height: 10vh;
 }
 
 .footer-bg {
-    /*background-color: aqua;*/
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(255, 255, 255, 1) 100%);
 }
 
 .footer {
-    /*background-color: skyblue;*/
     height: 10vh;
 }

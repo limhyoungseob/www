@@ -182,14 +182,29 @@
 
 
             <div class="group group2">
-                <div class="search">
+                <!--<div class="search">
                     <form action="" class="search-form">
                         <fieldset>
                             <legend></legend>
                             <div class="searching">
                                 <label for="searching">자료검색</label>
-                                <input type="text" id="searching" required placeholder="검색어를 입력하세요.">
+                                <input type="search" id="searching" required placeholder="검색어를 입력하세요.">
                             </div>
+                            <button type="submit" class="btn-search">검색</button>
+                        </fieldset>
+                    </form>
+                </div>-->
+                <div class="search">
+                    <h2 class="search-heading hidden">검색</h2>
+                    <!--인라인 자바 스크립트 html안에 자바스크립트가 있다.-->
+                    <!--"javascript:alert();" 바깥이 겹따움표 이기 때문에 안에 () 여기는 '' 홀따움표를 적는다.-->
+                    <form action="javascript:alert('검색이 완료되었습니다.');" class="search-form">
+                        <!--fieldset>legend-->
+                        <fieldset>
+                            <legend>검색 폼</legend>
+                            <label for="search">자료검색</label>
+                            <!--input#search.keyword 아이디도 있고 클래스도 있다.-->
+                            <input type="search" id="search" class="keyword" required placeholder="검색어를 입력하세요.">
                             <button type="submit" class="btn-search">검색</button>
                         </fieldset>
                     </form>
@@ -198,17 +213,19 @@
 
             </div>
 
-            <div class="group group3">콘텐츠칼럼3</div>
+            <div class="group group3 ">콘텐츠칼럼3</div>
         </main>
 
         <!--article.slogan+footer.footer-->
-        <article class="slogan">슬로건</article>
-        <div class="footer-bg">
-            <footer class="footer">푸터</footer>
+        <article class="slogan ">슬로건</article>
+        <div class="footer-bg ">
+            <footer class="footer ">푸터</footer>
         </div>
     </div>
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-    <script src="js/webcafe.js"></script>
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js " integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="js/webcafe.js "></script>
 </body>
 
 </html>
@@ -217,10 +234,10 @@
 <!--doctype html-->
 <!--html:4t-->
 <!--
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html lang="en">
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN " "http://www.w3.org/TR/html4/loose.dtd ">
+<html lang="en ">
 <head>
-<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<meta http-equiv="Content-Type " content="text/html;charset=UTF-8 ">
 <title>Document</title>
 </head>
 <body>
@@ -231,10 +248,10 @@
 html:xt
 -->
 <!--
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN " "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd ">
+<html xmlns="http://www.w3.org/1999/xhtml " xml:lang="en ">
 <head>
-<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<meta http-equiv="Content-Type " content="text/html;charset=UTF-8 ">
 <title>Document</title>
 </head>
 <body>
@@ -243,25 +260,25 @@ html:xt
 </html>
 -->
 <!--<!DOCTYPE html>
-<html lang="ko">
+<html lang="ko ">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="UTF-8 ">
+    <meta name="viewport " content="width=device-width, initial-scale=1.0 ">
+    <meta http-equiv="X-UA-Compatible " content="ie=edge ">
     <title>Web Cafe</title>
   </head>
   <body>
     <div>
-      <div class="note"></div>
+      <div class="note "></div>
 
       div.note.brand
-      <div class="note brand"></div>
+      <div class="note brand "></div>
 
       div#gnb
-      <div id="gnb"></div>
+      <div id="gnb "></div>
       ul>li>a
       <ul>
-        <li><a href=""></a></li>
+        <li><a href=" "></a></li>
       </ul>
 
       ul>li*3
@@ -273,30 +290,30 @@ html:xt
 
       ul>li*3>a
       <ul>
-        <li><a href=""></a></li>
-        <li><a href=""></a></li>
-        <li><a href=""></a></li>
+        <li><a href=" "></a></li>
+        <li><a href=" "></a></li>
+        <li><a href=" "></a></li>
       </ul>
 
       ul>li*3>a{메뉴아니템}
       <ul>
-        <li><a href="">메뉴아니템</a></li>
-        <li><a href="">메뉴아니템</a></li>
-        <li><a href="">메뉴아니템</a></li>
+        <li><a href=" ">메뉴아니템</a></li>
+        <li><a href=" ">메뉴아니템</a></li>
+        <li><a href=" ">메뉴아니템</a></li>
       </ul>
 
       ul>li*3>a{메뉴아니템$}
       <ul>
-        <li><a href="">메뉴아니템1</a></li>
-        <li><a href="">메뉴아니템2</a></li>
-        <li><a href="">메뉴아니템3</a></li>
+        <li><a href=" ">메뉴아니템1</a></li>
+        <li><a href=" ">메뉴아니템2</a></li>
+        <li><a href=" ">메뉴아니템3</a></li>
       </ul>
 
       ul>li.style$*3>a{메뉴아니템$}
       <ul>
-        <li class="style1"><a href="">메뉴아니템1</a></li>
-        <li class="style2"><a href="">메뉴아니템2</a></li>
-        <li class="style3"><a href="">메뉴아니템3</a></li>
+        <li class="style1 "><a href=" ">메뉴아니템1</a></li>
+        <li class="style2 "><a href=" ">메뉴아니템2</a></li>
+        <li class="style3 "><a href=" ">메뉴아니템3</a></li>
       </ul>
 
       header+nav+main+footer
@@ -305,8 +322,8 @@ html:xt
       <main></main>
       <footer></footer>
 
-      a[href="http://w3.org"]
-      <a href="http://w3.org"></a>
+      a[href="http://w3.org "]
+      <a href="http://w3.org "></a>
       
 
     </div>
