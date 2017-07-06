@@ -305,6 +305,9 @@ a {
 
 /*hover는 마우스를 올렸을때 효과를 준다.*/
 
+
+/*hover 마우스 올리면 다음에 밑에 줄나오게 한다.*/
+
 .main-menu span:hover,
 .main-menu span:focus {
     /*color: hsla(30, 80%, 70%, 1);*/
@@ -315,9 +318,6 @@ a {
     text-shadow: 1px 1px 0 rgba(93, 93, 93, 0.95), 1px -1px 0 rgba(93, 93, 93, 0.95), -1px 1px 0 rgba(93, 93, 93, 0.95), -1px -1px 0 rgba(93, 93, 93, 0.95);
     outline: 0;
 }
-
-
-/*hover 마우스 올리면 다음에 밑에 줄나오게 한다.*/
 
 .main-menu span:hover::after,
 .main-menu span:focus::after {
@@ -339,7 +339,6 @@ a {
 
 .main-menu ul {
     list-style: none;
-    /*background: lime;*/
     position: absolute;
     /*display: none;*/
     /*rap은 줄바꿈이고 nowrap은 줄바꿈 하지 않겟다.*/
@@ -373,7 +372,6 @@ a {
 
 .main-menu ul a {
     padding: 8px 15px 7px 0;
-    /*background: orange;*/
     display: block;
 }
 
@@ -985,6 +983,89 @@ dd.term-list-brief이런식으로 정확히 명시해줘도 된다.*/
     padding: 0 10px;
     height: 24px;
 }
+
+
+/*내가 실습한 board*/
+
+
+/*.board {
+    position: relative;
+    margin-top: 23px;
+}
+
+.board span:hover+ul {
+    display: block;
+}
+
+.board ul {
+    position: absolute;
+    top: 40px;
+    padding: 0 0 0 10px;
+    list-style-type: none;
+}
+
+.more {
+    float: right;
+    position: relative;
+    top: 4px;
+    right: 5px;
+}
+
+.board span {
+    float: left;
+    position: relative;
+}
+
+.board span {
+    margin: 0;
+    color: rgba(93, 93, 93, 0.95);
+    text-shadow: 1px 1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, -1px -1px 0 #fff;
+    padding: 5px;
+    border: 1px solid #aaa;
+    background: linear-gradient(to bottom, #eee, #ccc);
+    border-radius: 4px 4px 0 0;
+    border-bottom: 0;
+}
+
+.board ul li {
+    display: inline-block;
+}
+
+.board ul a {
+    display: block;
+}
+
+.notice-sub li a {
+    width: 290px;
+    display: inline-block;
+}
+
+.board li a::before {
+    font-family: "webcafeicon";
+    content: "r";
+    position: relative;
+    top: 2px;
+}
+
+.board time {
+    float: right;
+}
+
+.board span:hover {
+    background: white;
+    border: 1px solid red;
+    border-bottom: 0;
+    color: red;
+    outline: 0;
+}
+
+.notice-sub {
+    display: none;
+}
+
+.pds-sub {
+    display: block;
+}*/
 
 .slogan {
     height: 10vh;
