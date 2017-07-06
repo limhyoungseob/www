@@ -39,7 +39,7 @@ $(function() {
 
 **이것**은 ~~마크다운 문서~~ 입니다.
 
-
+------------
 #### code ~/.bashrc 이렇게 입력해서 git alias를 사용해서 간단하게 작업할 수 있다.     
 alias c='clear'  
 alias gs='git status'  
@@ -48,3 +48,10 @@ alias gp='git push origin master'
 function gc(){  
 git commit -m "$1"  
 }  
+------------
+깃서버에 보내고 싶지 않은 파일이 있으면  
+1.깃에서 master에서 .gitignore 파일을 만든다.  
+2..gitignore파일 안에 원하지 않은 파일은 *.txt 아니면 정확한 확장자 이름까지 적어서 저장한다.
+
+
+
