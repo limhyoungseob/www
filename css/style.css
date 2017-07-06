@@ -281,10 +281,10 @@ a {
 /*.main-menu>li>a {*/
 
 .main-menu span {
+    cursor: pointer;
     font-size: 1.6rem;
     font-family: "Noto Sans Bold";
     /*요새는 투명도 주는게 트랜드 그때는 16진수가아닌 rgba 방식을 사용*/
-    color: rgba(93, 93, 93, 0.95);
     /*padding: 10px 21px 10px 20px;*/
     background: rgba(255, 255, 255, 0.2);
     display: block;
@@ -292,6 +292,7 @@ a {
     padding: 0 20px;
     border-left: 2px solid rgba(255, 255, 255, 0.9);
     /*text-shadow: 1px 1px 0 #000, 2px 2px 0 #000, 3px 3px 0 #000, 4px 4px 0 #000;*/
+    color: rgba(93, 93, 93, 0.95);
     text-shadow: 1px 1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, -1px -1px 0 #fff;
 }
 
@@ -581,6 +582,14 @@ a {
     padding: 1px 1px 1px 1px;
 }
 
+.login-form label {
+    /*레이블 테그는 인라인 상자라 적용이 안된다.*/
+    display: inline-block;
+    width: 3.8em;
+    cursor: pointer;
+    /*background: yellow;*/
+}
+
 .btn-login {
     background: linear-gradient(to bottom, #eee, #ccc);
     border-radius: 4px;
@@ -636,14 +645,6 @@ a {
 .user-pw {
     /*background: lime;*/
     margin-top: 5px;
-}
-
-.login-form label {
-    /*레이블 테그는 인라인 상자라 적용이 안된다.*/
-    display: inline-block;
-    width: 3.8em;
-    cursor: pointer;
-    /*background: yellow;*/
 }
 
 .member {
@@ -892,8 +893,97 @@ dd.term-list-brief이런식으로 정확히 명시해줘도 된다.*/
 
 /*search 연습--------------------*/
 
+
+/*.search {
+    background: linear-gradient(to bottom, #eee 0%, #ccc 100%);
+    border: 1px solid #aaa;
+    border-bottom: 0;
+    border-radius: 15px 15px 0 0;
+    padding: 20px 10px 5px 25px;
+}
+
+.search fieldset {
+    border: 0;
+}
+
+.search-form input {
+    box-sizing: border-box;
+    width: 200px;
+    height: 20px;
+    border: 1px solid #aaa;
+    padding: 1px 1px 1px 1px;
+}
+
+.keyword {
+    box-sizing: border-box;
+    width: 200px;
+    height: 20px;
+    border: 1px solid #aaa;
+    padding: 1px 1px 1px 1px;
+}
+
+.search label::before {
+    font-family: "webcafeicon";
+    content: "z";
+    position: relative;
+    top: 2px;
+    right: 4px;
+}
+
+.btn-search {
+    width: 48px;
+    color: white;
+    background: linear-gradient(to bottom, #000, #ccc);
+    border-radius: 4px;
+    padding: 0 5px;
+    cursor: pointer;
+    border: 0;
+}*/
+
+
+/*search 진짜 실습 밑에 부분*/
+
 .search {
-    background: yellow;
+    background: linear-gradient(to bottom, #96e6a1 0%, #d4fc79 50%, white 100%);
+    border: 1px solid #aaa;
+    border-bottom: 0;
+    border-radius: 15px 15px 0 0;
+    padding: 15px 25px 5px 25px;
+}
+
+.search label {
+    color: rgba(93, 93, 93, 0.95);
+    text-shadow: 1px 1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff, -1px -1px 0 #fff;
+}
+
+.search fieldset {
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+
+.search-form label::before {
+    font-family: "webcafeicon";
+    content: "z";
+    position: relative;
+    top: 2px;
+}
+
+.search-form input {
+    width: 195px;
+    height: 22px;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    padding: 1px 1px 1px 5px;
+    margin: 0 5px;
+}
+
+.btn-search {
+    background: linear-gradient(to bottom, #eee, #ccc);
+    border-radius: 4px;
+    border: 1px solid #aaa;
+    padding: 0 10px;
+    height: 24px;
 }
 
 .slogan {
