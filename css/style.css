@@ -1284,6 +1284,122 @@ dd.term-list-brief이런식으로 정확히 명시해줘도 된다.*/
 
 /*새소식 디자인 최종*/
 
+
+/*.news {
+    position: relative;
+    margin-top: 10px;
+}
+
+.news-heading {
+    color: red;
+    font-family: "Noto Sans Bold";
+}
+
+.news-item {
+    border-top: 1px solid #aaa;
+    margin-top: 15px;
+    padding-top: 15px;
+    position: relative;
+}
+
+.news-more {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.news-item-thumnail {
+    float: left;
+    margin: 0 30px 0 0;
+}
+
+.news-item-thumnail img {
+    box-shadow: 3px 3px 5px 3px gray;
+    margin-bottom: 10px;
+}
+
+.news-item-thumnail figcaption {
+    text-align: center;
+}
+
+.news-item-heading {
+    font-family: "Noto Sans Bold", sans-serif;
+    right: 13px;
+    display: inline-block;
+    position: relative;
+    margin-bottom: 5px;
+}
+
+.news-item-date {
+    margin-bottom: 5px;
+}
+
+.news-item-brief {
+    margin-top: 5px;
+    line-height: 16px;
+}
+
+.news-item-heading::before {
+    content: "r";
+    font-family: "webcafeIcon";
+    position: relative;
+    top: 2px;
+}
+
+.news-more::before {
+    content: "p";
+    font-family: "webcafeIcon";
+    color: hsla(120, 100%, 40%, 1);
+    position: relative;
+    top: 2px;
+}*/
+
+
+/*-------*/
+
+.news {
+    background: yellow;
+    mask-type: 10px;
+    position: relative;
+}
+
+.news-heading {
+    background: lime;
+    font-family: "Noto Sans Bold";
+    font-size: 1.6rem;
+    color: red;
+}
+
+.news-more {
+    background: pink;
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    padding: 8px;
+}
+
+.news-item {
+    position: relative;
+    background: skyblue;
+    margin-top: 30px;
+    padding-left: 130px;
+}
+
+
+/*꼭 블록화 시켜야 한다!!!!*/
+
+.news-item a {
+    display: block;
+}
+
+.news-item-thumnail {
+    top: 0;
+    left: 0;
+    position: absolute;
+    margin: 0;
+    background: orange;
+}
+
 .slogan {
     height: 10vh;
 }
