@@ -1358,20 +1358,35 @@ dd.term-list-brief이런식으로 정확히 명시해줘도 된다.*/
 /*-------*/
 
 .news {
-    background: yellow;
-    mask-type: 10px;
+    margin-top: 10px;
     position: relative;
 }
 
+.news::before {
+    content: "";
+    position: absolute;
+    width: 90%;
+    height: 1px;
+    background: linear-gradient(to right, #aaa, #fff);
+    top: 30px;
+    left: 0;
+}
+
+.news-more::before {
+    content: "p";
+    font-family: "webcafeIcon";
+    color: hsla(120, 100%, 40%, 1);
+    position: relative;
+    top: 2px;
+}
+
 .news-heading {
-    background: lime;
     font-family: "Noto Sans Bold";
     font-size: 1.6rem;
-    color: red;
+    color: green;
 }
 
 .news-more {
-    background: pink;
     position: absolute;
     top: -8px;
     right: -8px;
@@ -1380,9 +1395,26 @@ dd.term-list-brief이런식으로 정확히 명시해줘도 된다.*/
 
 .news-item {
     position: relative;
-    background: skyblue;
     margin-top: 30px;
     padding-left: 130px;
+}
+
+.news-item-date,
+.news-item-brief {
+    /*기본적으로 inline으로 되기 때문에 block이나 inline block로 처리해야 한다.*/
+    display: block;
+    margin: 25px 0 0 1em;
+}
+
+.news-item-heading {
+    font-family: "Noto Sans Bold";
+}
+
+.news-item-heading::before {
+    content: "r";
+    font-family: "webcafeIcon";
+    position: relative;
+    top: 2px;
 }
 
 
@@ -1393,11 +1425,16 @@ dd.term-list-brief이런식으로 정확히 명시해줘도 된다.*/
 }
 
 .news-item-thumnail {
-    top: 0;
-    left: 0;
+    top: 5px;
+    left: 5px;
     position: absolute;
     margin: 0;
-    background: orange;
+    text-align: center;
+}
+
+.news-item-thumnail img {
+    margin-bottom: 15px;
+    box-shadow: 0 10px 10px 5px rgba(0, 0, 0, 0.5);
 }
 
 .slogan {
