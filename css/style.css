@@ -1437,6 +1437,180 @@ dd.term-list-brief이런식으로 정확히 명시해줘도 된다.*/
     box-shadow: 0 10px 10px 5px rgba(0, 0, 0, 0.5);
 }
 
+
+/*신규이벤트 및 관련 사이트*/
+
+.event {
+    border-bottom: 1px solid #aaa;
+    position: relative;
+}
+
+.event-related {
+    padding: 10px;
+    position: relative;
+    background: linear-gradient(to bottom, #eee, #ccc);
+    border: 1px solid #aaa;
+    border-radius: 5px;
+}
+
+.event-heading {
+    padding-top: 5px;
+}
+
+.event-heading,
+.related-heading {
+    font-family: "Noto Sans Bold";
+    font-size: 1.6rem;
+}
+
+.event-heading span,
+.related-heading span {
+    color: red;
+}
+
+#event-detail {
+    margin-top: 10px;
+}
+
+#event-detail img {
+    box-shadow: 5px 5px 0 0 rgba(0, 0, 0, 0.5);
+}
+
+#event-detail p {
+    padding-bottom: 10px;
+}
+
+#event-detail em {
+    font-style: normal;
+}
+
+.btn-event {
+    height: 19px;
+    position: absolute;
+    top: 5px;
+    right: 0;
+}
+
+.btn-event-prev,
+.btn-event-next {
+    width: 18px;
+    height: 19px;
+    border: 0;
+    padding: 19px 0 0 0;
+    cursor: pointer;
+    background: url("images/back_forward.png") no-repeat;
+    overflow: hidden;
+}
+
+.btn-event-prev:focus,
+.btn-event-next:focus {
+    outline: 2px dotted #0ff;
+}
+
+.btn-event-next {
+    background-position: 100% 0;
+}
+
+.related {
+    margin-top: 10px;
+}
+
+.related-list a {
+    display: block;
+    line-height: 25px;
+    padding-left: 25px;
+}
+
+.related-list:hover,
+.related-list:focus {
+    height: 125px;
+    padding: 10px 0;
+}
+
+.related-list {
+    margin-top: 10px;
+    list-style-type: none;
+    background: #fff;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    height: 25px;
+    overflow: hidden;
+    transition: all 0.5s;
+}
+
+
+/*.event-heading span,
+.related-heading span {
+    color: red;
+}
+
+.btn-event {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+#event-detail {
+    margin-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #aaa;
+}
+
+#event-detail img {
+    box-shadow: 3px 3px 3px 3px gray;
+    margin-bottom: 15px;
+}
+
+.related {
+    margin-top: 10px;
+}
+
+.related-heading {
+    margin-bottom: 10px;
+}
+
+.related-list li:hover {
+    line-height: 30px;
+    border: 1px solid #aaa;
+    background: white;
+    border-radius: 15px;
+    box-sizing: border-box;
+    width: 170px;
+    padding: 5px 15px;
+    list-style-type: none;
+    display: inline-block;
+}
+
+.related-list {
+    line-height: 30px;
+    border: 1px solid #aaa;
+    background: white;
+    border-radius: 15px;
+    box-sizing: border-box;
+    width: 170px;
+    height: 40px;
+    padding: 5px 15px;
+    list-style-type: none;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.btn-event-prev,
+.btn-event-next {
+    cursor: pointer;
+    border: 0;
+    background: url("images/back_forward.png");
+    display: inline-block;
+    width: 20px;
+    padding-top: 18px;
+    height: 0;
+    overflow: hidden;
+}
+
+.btn-event-next {
+    background-position: -35px 0;
+}*/
+
 .slogan {
     height: 10vh;
 }

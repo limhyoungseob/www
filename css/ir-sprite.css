@@ -1,0 +1,29 @@
+@charset "utf-8";
+
+/*ir기법 예제*/
+
+.ir {
+    width: 290px;
+    height: 195px;
+    padding-top: 195px;
+    /*overflow: hidden;*/
+    background: yellow url("images/title.png") no-repeat;
+}
+
+
+/*스프라이트 배경 이미지*/
+
+.btn-prev,
+.btn-next {
+    background: pink url("images/backpage_forwardpage.png");
+    display: inline-block;
+    width: 20px;
+    /*height: 19px;*/
+    padding-top: 19px;
+    height: 0;
+    overflow: hidden;
+}
+
+.btn-next {
+    background-position: -40px 0;
+}
