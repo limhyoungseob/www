@@ -626,7 +626,7 @@ a {
 
 .icon-right-open::before,
 .icon-right-outline::before {
-    color: red;
+    color: green;
     /*font-size: 1rem;*/
 }
 
@@ -1465,7 +1465,7 @@ dd.term-list-brief이런식으로 정확히 명시해줘도 된다.*/
 
 .event-heading span,
 .related-heading span {
-    color: red;
+    color: green;
 }
 
 #event-detail {
